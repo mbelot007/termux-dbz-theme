@@ -92,7 +92,7 @@ EOF
 echo ""
 echo "            ${BLUE}╔═════════════════════════════════════════════════════════════════╗${RESET}"
 printf "            ${BLUE}║${RESET}              ${RED}POWER LEVEL:${RESET} ${RED}██████████${RESET} ${RED}>9000!${RESET}                     ${BLUE}║${RESET}\n"
-printf "            ${BLUE}║${RESET}              ${YELLOW}RAM:${RESET} ${GREEN}%-3s${RESET}  ${MAUVE}|${RESET}  ${YELLOW}BATTERY:${RESET} ${GREEN}%-3s${RESET}                          ${BLUE}║${RESET}\n" "${RAM}%" "${BAT}%"
+printf "            ${BLUE}║${RESET}              ${YELLOW}RAM:${RESET} ${GREEN}%-3s${RESET}  ${MAUVE}|${RESET}  ${YELLOW}BATTERY:${RESET} ${GREEN}%-3s${RESET}                         ${BLUE}║${RESET}\n" "${RAM}%" "${BAT}%"
 echo "            ${BLUE}║${RESET}              ${MAUVE}STATUS:${RESET} ${GREEN}SAIYAN MODE ACTIVE${RESET}                         ${BLUE}║${RESET}"
 echo "            ${BLUE}╚═════════════════════════════════════════════════════════════════╝${RESET}"
 echo ""
