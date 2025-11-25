@@ -199,27 +199,6 @@ rm ~/.local/bin/dbz-greeting
 # Then edit ~/.zshrc and remove the Dragon Ball Z greeting section
 ```
 
-## Contributing
-
-Contributions are welcome! Feel free to:
-
-- Report bugs via GitHub Issues
-- Submit pull requests with improvements
-- Share your customizations
-- Suggest new Dragon Ball themed features
-
-## License
-
-MIT License - Free to use, modify, and distribute.
-
-## Credits
-
-- Shenron Braille Unicode art
-- Catppuccin Frappe color palette
-- Built for the Termux and Dragon Ball Z communities
-
 ---
 
 *"What?! 9000?! There's no way that can be right!"* - Vegeta
-
-**If you enjoyed this, give it a star on GitHub!**
