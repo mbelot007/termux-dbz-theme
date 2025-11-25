@@ -18,9 +18,9 @@ Epic Dragon Ball Z themed greeting screen for Termux on Android, featuring Shenr
 [Shenron Dragon ASCII Art - 30 lines of majestic dragon]
 
             ╔═════════════════════════════════════════════════════════════════╗
-            ║              POWER LEVEL: ██████████ >9000!                        ║
-            ║              RAM: 76%  |  BATTERY: 85%                             ║
-            ║              STATUS: SAIYAN MODE ACTIVE                            ║
+            ║              POWER LEVEL: ██████████ >9000!                               ║
+            ║              RAM: 76%  |  BATTERY: 85%                                      ║
+            ║              STATUS: SAIYAN MODE ACTIVE                                     ║
             ╚═════════════════════════════════════════════════════════════════╝
 
             __      __   _                   __      __            _
