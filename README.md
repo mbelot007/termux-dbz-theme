@@ -2,6 +2,8 @@
 
 Epic Dragon Ball Z themed greeting screen for Termux on Android, featuring Shenron and a scouter-style system monitor.
 
+![Dragon Ball Z Termux Theme](screenshot.jpg)
+
 ## Features
 
 - **Shenron Dragon** - Beautiful Braille Unicode ASCII art of the Eternal Dragon
