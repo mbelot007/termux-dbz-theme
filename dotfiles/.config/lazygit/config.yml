@@ -1,0 +1,68 @@
+# Lazygit Configuration with Catppuccin Frappe Theme
+
+gui:
+  # Catppuccin Frappe Theme (Blue Accent)
+  # From: https://github.com/catppuccin/lazygit
+  theme:
+    activeBorderColor:
+      - '#8caaee'  # Blue
+      - bold
+    inactiveBorderColor:
+      - '#a5adce'  # Subtext0
+    optionsTextColor:
+      - '#8caaee'  # Blue
+    selectedLineBgColor:
+      - '#414559'  # Surface0
+    cherryPickedCommitBgColor:
+      - '#51576d'  # Surface1
+    cherryPickedCommitFgColor:
+      - '#8caaee'  # Blue
+    unstagedChangesColor:
+      - '#e78284'  # Red
+    defaultFgColor:
+      - '#c6d0f5'  # Text
+    searchingActiveBorderColor:
+      - '#e5c890'  # Yellow
+
+  # Show file icons (requires Nerd Font)
+  showFileIcons: true
+  
+  # Show command log
+  showCommandLog: true
+  
+  # Mouse support
+  mouseEvents: true
+
+# Git configuration
+git:
+  # Paging
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+
+  # Auto-fetch
+  autoFetch: true
+  autoRefresh: true
+  
+  # Branch sorting
+  branchLogCmd: "git log --graph --color
+
+# Refresher
+refresher:
+  refreshInterval: 10
+  fetchInterval: 60
+
+# Update checking
+update:
+  method: never  # Don't auto-update on Termux
+
+# Confirmations
+confirmOnQuit: false
+
+# Disable ASCII logo for better terminal compatibility
+disableStartupPopups: true
+
+# OS-specific settings for Termux
+os:
+  # Use termux editor
+  editPreset: 'vim'  # or 'nano' if you prefer

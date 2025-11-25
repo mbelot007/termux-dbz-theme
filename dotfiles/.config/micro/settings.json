@@ -1,0 +1,10 @@
+{
+    "colorscheme": "catppuccin-frappe",
+    "autosu": true,
+    "tabsize": 2,
+    "tabstospaces": true,
+    "ruler": true,
+    "scrollbar": true,
+    "mouse": true,
+    "syntax": true
+}

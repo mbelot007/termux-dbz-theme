@@ -1,0 +1,147 @@
+# Starship Configuration with Catppuccin Frappe Theme
+
+# Timeout for commands (in milliseconds)
+command_timeout = 500
+
+# Format string (order of modules)
+format = """
+[┌─](bold #a6d189)$username$hostname$directory$git_branch$git_status$git_state
+[└─](bold #a6d189)$character"""
+
+# Alternative compact format (uncomment to use):
+# format = "$directory$git_branch$git_status$nodejs$python$rust$character"
+
+# Right side format
+right_format = "$cmd_duration$time"
+
+[character]
+success_symbol = "[➜](bold #a6d189)"
+error_symbol = "[✗](bold #e78284)"
+vicmd_symbol = "[V](bold #a6d189)"
+
+[username]
+style_user = "bold #8caaee"
+style_root = "bold #e78284"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[@$hostname](bold #e5c890) "
+disabled = false
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+style = "bold #8caaee"
+read_only = " 🔒"
+read_only_style = "#e78284"
+format = "[$path]($style)[$read_only]($read_only_style) "
+
+# Git configuration
+[git_branch]
+symbol = " "
+style = "bold #ca9ee6"
+format = "[$symbol$branch(:$remote_branch)]($style) "
+
+[git_status]
+style = "bold #e5c890"
+format = "([$all_status$ahead_behind]($style) )"
+conflicted = "🏳 "
+ahead = "⇡${count} "
+behind = "⇣${count} "
+diverged = "⇕⇡${ahead_count}⇣${behind_count} "
+up_to_date = "✓ "
+untracked = "? "
+stashed = "📦 "
+modified = "! "
+staged = "+ "
+renamed = "» "
+deleted = "✘ "
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](bold #e78284)"
+rebase = "REBASING"
+merge = "MERGING"
+revert = "REVERTING"
+bisect = "BISECTING"
+am = "AM"
+am_or_rebase = "AM/REBASE"
+style = "bold #e5c890"
+
+# Language/Runtime indicators
+[nodejs]
+symbol = " "
+style = "bold #a6d189"
+format = "[$symbol($version )]($style)"
+detect_extensions = ["js", "mjs", "cjs", "ts"]
+detect_files = ["package.json", ".node-version"]
+detect_folders = ["node_modules"]
+
+[python]
+symbol = " "
+style = "bold #e5c890"
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+detect_extensions = ["py"]
+detect_files = [".python-version", "Pipfile", "requirements.txt", "pyproject.toml"]
+
+[rust]
+symbol = " "
+style = "bold #e78284"
+format = "[$symbol($version )]($style)"
+
+[package]
+symbol = "📦 "
+style = "bold #ef9f76"
+format = "[$symbol$version]($style) "
+disabled = false
+
+# Command duration
+[cmd_duration]
+min_time = 500
+format = "[$duration](bold #e5c890)"
+show_milliseconds = false
+show_notifications = false
+
+# Time
+[time]
+disabled = false
+format = '[$time]($style) '
+style = "bold #c6d0f5"
+time_format = "%T"
+utc_time_offset = "local"
+
+# Memory usage
+[memory_usage]
+disabled = false
+threshold = 75
+format = "[$symbol${ram_pct}]($style) "
+symbol = "🐏 "
+style = "bold dimmed #a5adce"
+
+# Additional languages/tools
+[golang]
+symbol = " "
+format = "[$symbol($version )]($style)"
+
+[java]
+symbol = " "
+format = "[$symbol($version )]($style)"
+
+[docker_context]
+symbol = " "
+format = "[$symbol$context]($style) "
+style = "bold #8caaee"
+
+[aws]
+symbol = "☁️  "
+format = '[$symbol($profile )(\($region\) )]($style)'
+style = "bold #e5c890"
+
+# Status
+[status]
+disabled = false
+format = '[\[$status\]]($style) '
+style = "bold #e78284"
