@@ -6,7 +6,6 @@ My complete Termux setup with Catppuccin Frappe theme across all tools.
 
 ### Shell Configuration
 - `.zshrc` - Zsh configuration with plugins, aliases, and Dragon Ball Z greeting
-- `.gitconfig` - Git configuration with git-delta integration
 
 ### Editor Configurations
 - `.vimrc` - Vim setup with vim-startify and plugins (Pikachu theme)
@@ -34,12 +33,10 @@ cd termux-dbz-theme/dotfiles
 mkdir -p ~/dotfiles-backup
 cp ~/.zshrc ~/dotfiles-backup/ 2>/dev/null
 cp ~/.vimrc ~/dotfiles-backup/ 2>/dev/null
-cp ~/.gitconfig ~/dotfiles-backup/ 2>/dev/null
 
 # Copy dotfiles
 cp .zshrc ~/
 cp .vimrc ~/
-cp .gitconfig ~/
 cp -r .config/* ~/.config/
 cp -r .termux/* ~/.termux/
 
