@@ -25,7 +25,7 @@ mkdir -p ~/.local/bin
 
 # Download greeting script
 echo "[3/5] Downloading Dragon Ball Z greeting script..."
-curl -sL https://raw.githubusercontent.com/YOUR_USERNAME/termux-dbz-theme/main/dbz-greeting -o ~/.local/bin/dbz-greeting
+curl -sL https://raw.githubusercontent.com/mbelot007/termux-dbz-theme/main/dbz-greeting -o ~/.local/bin/dbz-greeting
 chmod +x ~/.local/bin/dbz-greeting
 
 # Backup existing zshrc

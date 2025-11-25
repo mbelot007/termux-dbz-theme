@@ -34,7 +34,7 @@ Epic Dragon Ball Z themed greeting screen for Termux on Android, featuring Shenr
 ## Quick Install
 
 ```bash
-curl -sL https://raw.githubusercontent.com/YOUR_USERNAME/termux-dbz-theme/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/mbelot007/termux-dbz-theme/main/install.sh | bash
 ```
 
 ## Manual Installation
@@ -54,7 +54,7 @@ pkg install zsh figlet fastfetch jq curl
 
 ```bash
 mkdir -p ~/.local/bin
-curl -sL https://raw.githubusercontent.com/YOUR_USERNAME/termux-dbz-theme/main/dbz-greeting -o ~/.local/bin/dbz-greeting
+curl -sL https://raw.githubusercontent.com/mbelot007/termux-dbz-theme/main/dbz-greeting -o ~/.local/bin/dbz-greeting
 chmod +x ~/.local/bin/dbz-greeting
 ```
 
